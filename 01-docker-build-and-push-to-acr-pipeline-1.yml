@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '34119782-4265-442a-b380-1050c2271267'
   imageRepository: 'app1nginx'
   containerRegistry: 'aksnewkuber.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'azure-devops-github-aks-acr/Git-Repository-files/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
