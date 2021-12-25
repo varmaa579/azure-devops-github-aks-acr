@@ -3,7 +3,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
+- master
 
 resources:
 - repo: self
@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '396fbb98-e415-4923-8520-c31689085165'
   imageRepository: 'app1nginx'
   containerRegistry: 'aksnewkuber.azurecr.io'
-  dockerfilePath: '**/Git-Repository-files/Dockerfile'
+  dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
